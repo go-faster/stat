@@ -1,10 +1,10 @@
-name: test
+name: build
 
 on:
   pull_request:
 
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
