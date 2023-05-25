@@ -20,10 +20,6 @@ jobs:
 
       - name: Get yarn cache
         id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Get yarn cache
-        id: yarn-cache
         run: echo "cache=$(yarn cache dir)" >> $GITHUB_ENV
 
       - name: Cache dependencies
