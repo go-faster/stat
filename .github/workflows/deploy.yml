@@ -1,11 +1,11 @@
-name: pages
+name: deploy
 
 on:
   push:
     branches: [main]
 
 jobs:
-  deploy:
+  s3:
     environment: prod
     runs-on: ubuntu-latest
     concurrency:
