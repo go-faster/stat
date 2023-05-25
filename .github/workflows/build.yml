@@ -1,12 +1,13 @@
-name: Lint
+name: pages
+
 on:
-  push:
-    branches: [ main ]
   pull_request:
 
 jobs:
-  check-generate:
+  deploy:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
 
@@ -28,7 +29,4 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - run: yarn install --frozen-lockfile
-      - run: yarn gen
-
-      - name: Check git diff
-        run: git diff --exit-code
+      - run: yarn build
