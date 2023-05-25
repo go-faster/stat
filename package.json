@@ -12,6 +12,8 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "bem-cn-lite": "^4.1.0",
+    "openapi-fetch": "^0.2.0",
+    "openapi-typescript": "^6.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -38,7 +40,8 @@
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:styles": "stylelint '{styles,src}/**/*.scss'",
     "lint:prettier": "prettier --check '**/*.md'",
-    "lint": "npm run lint:js && npm run lint:styles && npm run lint:prettier"
+    "lint": "npm run lint:js && npm run lint:styles && npm run lint:prettier",
+    "gen": "openapi-typescript openapi.yaml -o ./src/api.ts"
   },
   "browserslist": {
     "production": [
