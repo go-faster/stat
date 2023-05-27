@@ -21,6 +21,7 @@ export const App = () => {
     const [status, initStatus] = useState('loading');
     const fetchData = async () => {
         const {data} = await get('/status', {});
+        // TODO: show error on error
         return data?.message || 'error';
     };
 
