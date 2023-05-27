@@ -19,15 +19,45 @@ export interface components {
     Error: {
       message: string;
     };
+    User: {
+      /**
+       * Format: int64 
+       * @description User ID
+       */
+      id: number;
+      /** @description User name */
+      nickname: string;
+      /** @description User full name */
+      full_name: string;
+      /**
+       * Format: uri 
+       * @description User avatar URL
+       */
+      avatar_url: string;
+      /**
+       * Format: uri 
+       * @description User profile URL
+       */
+      html_url: string;
+    };
+    /** @description User statistics */
+    UserStat: {
+      user: components["schemas"]["User"];
+      /** @description Total commits */
+      total_commits: number;
+    };
+    /** @description Statistics */
+    Statistics: {
+      /** @description Total commits */
+      total_commits: number;
+      /** @description Top users */
+      top_users: (components["schemas"]["UserStat"])[];
+    };
     /** @description Status */
     Status: {
-      /**
-       * @description Status 
-       * @enum {string}
-       */
-      status: "ok" | "error";
       /** @description Message */
-      message?: string;
+      message: string;
+      stat: components["schemas"]["Statistics"];
     };
   };
   responses: {
@@ -51,7 +81,7 @@ export interface operations {
   /** @description get status */
   status: {
     responses: {
-      /** @description Coordinator status */
+      /** @description Go Faster Status */
       200: {
         content: {
           "application/json": components["schemas"]["Status"];

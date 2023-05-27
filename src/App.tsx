@@ -9,7 +9,7 @@ import './App.scss';
 const b = block('app');
 
 import createClient from 'openapi-fetch';
-import {paths} from './api';
+import {paths, components} from './api';
 
 const {get} = createClient<paths>({baseUrl: 'https://api.go-faster.org'});
 
@@ -18,11 +18,11 @@ enum Theme {
 }
 
 export const App = () => {
-    const [status, initStatus] = useState('loading');
+    const [status, initStatus] = useState({} as components['schemas']['Status']);
     const fetchData = async () => {
         const {data} = await get('/status', {});
         // TODO: show error on error
-        return data?.message || 'error';
+        return data || ({message: 'Not loaded'} as components['schemas']['Status']);
     };
 
     useEffect(() => {
@@ -39,7 +39,7 @@ export const App = () => {
     return (
         <ThemeProvider theme={Theme.Dark}>
             <div className={b()}>
-                <h1 className={b('header')}>{`Status: ${status}`}</h1>
+                <h1 className={b('header')}>{`Status: ${status.message}`}</h1>
                 <Container maxWidth="m">
                     <Row space="5">
                         <Table
@@ -56,11 +56,7 @@ export const App = () => {
                             data={[
                                 {
                                     stat: 'Commits',
-                                    value: '1k',
-                                },
-                                {
-                                    stat: 'PR',
-                                    value: '1k',
+                                    value: status.stat.total_commits,
                                 },
                             ]}
                         />
