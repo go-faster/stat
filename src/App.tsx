@@ -18,7 +18,11 @@ enum Theme {
 }
 
 export const App = () => {
-    const [status, initStatus] = useState({} as components['schemas']['Status']);
+    const [status, initStatus] = useState({
+        stat: {
+            total_commits: 0,
+        },
+    } as components['schemas']['Status']);
     const fetchData = async () => {
         const {data} = await get('/status', {});
         // TODO: show error on error
