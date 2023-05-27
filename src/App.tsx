@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import block from 'bem-cn-lite';
 import {Button, Icon, Label, Table, ThemeProvider} from '@gravity-ui/uikit';
 import {Container, Row} from '@gravity-ui/uikit/unstable_layout';
@@ -8,15 +8,37 @@ import './App.scss';
 
 const b = block('app');
 
+import createClient from 'openapi-fetch';
+import {paths} from './api';
+
+const {get} = createClient<paths>({baseUrl: 'https://api.go-faster.org/'});
+
 enum Theme {
     Dark = 'dark',
 }
 
 export const App = () => {
+    const [status, initStatus] = useState('');
+    const fetchData = async () => {
+        const {data} = await get('/status', {});
+        return data?.status || 'error';
+    };
+
+    useEffect(() => {
+        fetchData()
+            .then((res) => {
+                initStatus(res);
+            })
+            .catch((e) => {
+                // eslint-disable-next-line no-console
+                console.log(e.message);
+            });
+    }, []);
+
     return (
         <ThemeProvider theme={Theme.Dark}>
             <div className={b()}>
-                <h1 className={b('header')}>Go Faster: stats</h1>
+                <h1 className={b('header')}>{`Status: ${status}`}</h1>
                 <Container maxWidth="m">
                     <Row space="5">
                         <Table
