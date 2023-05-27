@@ -18,10 +18,10 @@ enum Theme {
 }
 
 export const App = () => {
-    const [status, initStatus] = useState('');
+    const [status, initStatus] = useState('loading');
     const fetchData = async () => {
         const {data} = await get('/status', {});
-        return data?.status || 'error';
+        return data?.message || 'error';
     };
 
     useEffect(() => {
