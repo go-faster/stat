@@ -11,7 +11,7 @@ const b = block('app');
 import createClient from 'openapi-fetch';
 import {paths} from './api';
 
-const {get} = createClient<paths>({baseUrl: 'https://api.go-faster.org/'});
+const {get} = createClient<paths>({baseUrl: 'https://api.go-faster.org'});
 
 enum Theme {
     Dark = 'dark',
