@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
-    "@gravity-ui/page-constructor": "^2.21.0",
+    "@gravity-ui/page-constructor": "^2.22.0",
     "@gravity-ui/uikit": "^4.14.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
