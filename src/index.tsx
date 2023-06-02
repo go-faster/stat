@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {configure} from '@gravity-ui/uikit';
-import {LayoutProvider} from '@gravity-ui/uikit/unstable_layout';
+import {LayoutProvider} from '@gravity-ui/uikit';
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
