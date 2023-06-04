@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import block from 'bem-cn-lite';
-import {Button, Icon, Label, Table, ThemeProvider} from '@gravity-ui/uikit';
-import {Container, Row} from '@gravity-ui/uikit/unstable_layout';
+import {Button, Icon, Label, Table, ThemeProvider, Container, Row} from '@gravity-ui/uikit';
 import iconGitHub from './assets/icons/github.svg';
 import iconTelegram from './assets/icons/telegram.svg';
 import './App.scss';
