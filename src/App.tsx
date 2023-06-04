@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import {Button, Container, Icon, Label, Row, Table, ThemeProvider} from '@gravity-ui/uikit';
 import block from 'bem-cn-lite';
-import {Button, Icon, Label, Table, ThemeProvider, Container, Row} from '@gravity-ui/uikit';
+import createClient from 'openapi-fetch';
+import React, {useEffect, useState} from 'react';
+
+import './App.scss';
+import {components, paths} from './api';
 import iconGitHub from './assets/icons/github.svg';
 import iconTelegram from './assets/icons/telegram.svg';
-import './App.scss';
 
 const b = block('app');
-
-import createClient from 'openapi-fetch';
-import {paths, components} from './api';
 
 const {get} = createClient<paths>({baseUrl: 'https://api.go-faster.org'});
 

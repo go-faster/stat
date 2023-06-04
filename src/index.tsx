@@ -1,9 +1,10 @@
+import {configure} from '@gravity-ui/uikit';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {configure} from '@gravity-ui/uikit';
+
 import {App} from './App';
-import reportWebVitals from './reportWebVitals';
 import './index.scss';
+import reportWebVitals from './reportWebVitals';
 
 configure({
     lang: 'en',
