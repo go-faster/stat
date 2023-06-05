@@ -42,7 +42,7 @@ export const App = () => {
     return (
         <ThemeProvider theme={Theme.Dark}>
             <div className={b()}>
-                <h1 className={b('header')}>{`Status: ${status.message}`}</h1>
+                <h1 className={b('header')}>{status.message}</h1>
                 <Container maxWidth="m">
                     <Row space="5">
                         <Table
