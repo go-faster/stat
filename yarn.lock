@@ -1390,10 +1390,10 @@
   resolved "https://registry.yarnpkg.com/@gravity-ui/icons/-/icons-2.2.0.tgz#f2a81f1950c51e0a048559dceef0ab896884accb"
   integrity sha512-CsYg+Dj08Yp1eGKux7c+sm7HSPJRDvDBjyOHnL6UR19QM+HCpdGiyrR2VVBvYadwm2eOeX4JNSn+vMPrqsmJdg==
 
-"@gravity-ui/page-constructor@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@gravity-ui/page-constructor/-/page-constructor-3.3.0.tgz#d2d9048a8b9a1a3e34b76b7bb4793b36805049a9"
-  integrity sha512-/pxJfn2iSDCKSJaJr36M7lrxE3PKoKFcQqh5WH/0nzi/WtNQJLs/DmZeaUz8uFTxHUshzjavK3oja4HEHNpqsA==
+"@gravity-ui/page-constructor@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@gravity-ui/page-constructor/-/page-constructor-3.4.0.tgz#d7c344f6f62ba909f2828af084c9bc62e0266a86"
+  integrity sha512-7ldtkagtgU8NLS3ZYf+A1ZyPrPOeL9FzQX7eIyh199nSllk5UPIXM0C003tw+KT7DhSNfNEeQw1X2N1Zk3RDyw==
   dependencies:
     "@gravity-ui/i18n" "^1.0.0"
     bem-cn-lite "^4.0.0"
