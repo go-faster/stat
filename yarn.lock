@@ -1362,6 +1362,16 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.43.0.tgz#559ca3d9ddbd6bf907ad524320a0d14b85586af0"
   integrity sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==
 
+"@gravity-ui/dynamic-forms@1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@gravity-ui/dynamic-forms/-/dynamic-forms-1.7.1.tgz#95b27e3209e406bf26e662a8d95a05e875883fa1"
+  integrity sha512-txFgH1CQrOc5eyTPciuoaVpeR+cer1RmEYLASjlWJlVH7w+zKIIDw75tp87IhQv1XvjiS3CEbvYtQsdWbXg8tg==
+  dependencies:
+    "@gravity-ui/i18n" "^1.0.0"
+    "@gravity-ui/icons" "^2.1.0"
+    bem-cn-lite "^4.0.0"
+    lodash "^4.17.20"
+
 "@gravity-ui/eslint-config@^2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@gravity-ui/eslint-config/-/eslint-config-2.1.1.tgz#b2859dae04b6e66ae9e82be63782b15f3c83749d"
@@ -1385,16 +1395,17 @@
   resolved "https://registry.yarnpkg.com/@gravity-ui/i18n/-/i18n-1.1.0.tgz#35d8f26eb605ef0d94255e44273a804867fa11be"
   integrity sha512-Ck+LNE1S2GGaMKMijIYWogiM/tYk0wHPlqLrhZmzp6P5keIu8YnPDeIlwAzq4eYVSrtTudLmshFB9QmYAeLryQ==
 
-"@gravity-ui/icons@^2.2.0":
+"@gravity-ui/icons@^2.1.0", "@gravity-ui/icons@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@gravity-ui/icons/-/icons-2.2.0.tgz#f2a81f1950c51e0a048559dceef0ab896884accb"
   integrity sha512-CsYg+Dj08Yp1eGKux7c+sm7HSPJRDvDBjyOHnL6UR19QM+HCpdGiyrR2VVBvYadwm2eOeX4JNSn+vMPrqsmJdg==
 
-"@gravity-ui/page-constructor@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@gravity-ui/page-constructor/-/page-constructor-3.4.0.tgz#d7c344f6f62ba909f2828af084c9bc62e0266a86"
-  integrity sha512-7ldtkagtgU8NLS3ZYf+A1ZyPrPOeL9FzQX7eIyh199nSllk5UPIXM0C003tw+KT7DhSNfNEeQw1X2N1Zk3RDyw==
+"@gravity-ui/page-constructor@^3.6.1":
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/@gravity-ui/page-constructor/-/page-constructor-3.6.1.tgz#835449539fd9e3ea63a2db48fa21a441f36104f1"
+  integrity sha512-etbVwh0LlNiQbEpRwbnlqvLEanEd0MLr66GvdXqa98+/k7EYtbbE48JBK18jbAxkn53TvJxGVlbiviwphuEnig==
   dependencies:
+    "@gravity-ui/dynamic-forms" "1.7.1"
     "@gravity-ui/i18n" "^1.0.0"
     bem-cn-lite "^4.0.0"
     final-form "^4.20.9"
