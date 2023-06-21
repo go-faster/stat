@@ -1,5 +1,5 @@
-// fix problem with CSS incorrect fetching order
-// eslint-disable-next-line import/order
+/* eslint-disable import/order */
+import '@gravity-ui/uikit/styles/styles.css';
 import './index.scss';
 
 import {configure} from '@gravity-ui/uikit';
