@@ -7338,10 +7338,10 @@ open@^8.0.9, open@^8.4.0:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
-openapi-fetch@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/openapi-fetch/-/openapi-fetch-0.5.0.tgz#e1a208e3f6ae21f5ed049e572eb1829426f50347"
-  integrity sha512-C77daacn2TAaLKLbCWCdlFQKhqSalv+Q2r7W1gGexN4Xh6ImkRMAqpPRb06GZitmI4MgvfzTbihnkrXkvUmtoA==
+openapi-fetch@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/openapi-fetch/-/openapi-fetch-0.6.0.tgz#21fb94a8aafb5395859e92338ecf2cb627f43336"
+  integrity sha512-EA9Ic4CvaPXPOXWkQl/S5ZVxD9YeKgIQsYsYhvTZgeXnrN/sllN2jF/xgzXYFqXvB7Jec8XUWv4dT1NQNiiAeg==
 
 openapi-typescript@^6.2.8:
   version "6.2.8"
