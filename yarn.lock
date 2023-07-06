@@ -7353,10 +7353,10 @@ openapi-fetch@^0.6.0:
   resolved "https://registry.yarnpkg.com/openapi-fetch/-/openapi-fetch-0.6.0.tgz#21fb94a8aafb5395859e92338ecf2cb627f43336"
   integrity sha512-EA9Ic4CvaPXPOXWkQl/S5ZVxD9YeKgIQsYsYhvTZgeXnrN/sllN2jF/xgzXYFqXvB7Jec8XUWv4dT1NQNiiAeg==
 
-openapi-typescript@^6.2.8:
-  version "6.2.8"
-  resolved "https://registry.yarnpkg.com/openapi-typescript/-/openapi-typescript-6.2.8.tgz#71f43e932b1405a22a6fd5b94bcb37a90698a834"
-  integrity sha512-yA+y5MHiu6cjmtsGfNLavzVuvGCKzjL3H+exgHDPK6bnp6ZVFibtAiafenNSRDWL0x+7Sw/VPv5SbaqiPLW46w==
+openapi-typescript@^6.2.9:
+  version "6.2.9"
+  resolved "https://registry.yarnpkg.com/openapi-typescript/-/openapi-typescript-6.2.9.tgz#322f3b4794702f58506a1ff0d80a69eda0a8ca32"
+  integrity sha512-/fu+bexbrln8tbZNseAZK+xLY3FXJeuLUJIDMCw0WVzWQHUFt2kMUY99QBGshLoFqyIR8/Fl1sS7ME1fvGVznA==
   dependencies:
     ansi-colors "^4.1.3"
     fast-glob "^3.2.12"
