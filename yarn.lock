@@ -1425,10 +1425,10 @@
   resolved "https://registry.yarnpkg.com/@gravity-ui/icons/-/icons-2.2.0.tgz#f2a81f1950c51e0a048559dceef0ab896884accb"
   integrity sha512-CsYg+Dj08Yp1eGKux7c+sm7HSPJRDvDBjyOHnL6UR19QM+HCpdGiyrR2VVBvYadwm2eOeX4JNSn+vMPrqsmJdg==
 
-"@gravity-ui/page-constructor@^3.10.2":
-  version "3.10.2"
-  resolved "https://registry.yarnpkg.com/@gravity-ui/page-constructor/-/page-constructor-3.10.2.tgz#3a630926e81384c2e455378ced6b1791c2af27d0"
-  integrity sha512-BZeNEA0gem57PAGsFQ65ooMlTxJQWRcNo8K9xXxpB5j0RsbB8pSPzat8G/s+c4dK5bR+7SUyrRtkGhgytNlo9Q==
+"@gravity-ui/page-constructor@^3.10.3":
+  version "3.10.3"
+  resolved "https://registry.yarnpkg.com/@gravity-ui/page-constructor/-/page-constructor-3.10.3.tgz#7cd2aae8626639eeef70f517a6ee606eb9dba7d8"
+  integrity sha512-9Y47RMC4JpTLdbBbwhCj6jVMxUSRgGFaYXdO6mETMgrXJ23hR53+AEhnYSnsuoKXdYXIlzCDDG4mGoJ9MAFWzQ==
   dependencies:
     "@gravity-ui/dynamic-forms" "^1.9.2"
     "@gravity-ui/i18n" "^1.0.0"
