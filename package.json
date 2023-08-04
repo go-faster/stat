@@ -4,7 +4,7 @@
   "private": false,
   "dependencies": {
     "@gravity-ui/page-constructor": "^3.16.0",
-    "@gravity-ui/uikit": "^4.26.1",
+    "@gravity-ui/uikit": "^4.26.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
