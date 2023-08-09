@@ -1464,10 +1464,10 @@
   resolved "https://registry.yarnpkg.com/@gravity-ui/tsconfig/-/tsconfig-1.0.0.tgz#c34221bf217f4748c9c67487e71a13199828d261"
   integrity sha512-C7uWrCTD6g+rvSFYTPaOMMf4YUWyA5eRSXsJ1AsigGc7yQC/lhugGNqeUo5efz+zpmZ80oG/BIJPCx0nIZizDg==
 
-"@gravity-ui/uikit@^4.26.3":
-  version "4.26.3"
-  resolved "https://registry.yarnpkg.com/@gravity-ui/uikit/-/uikit-4.26.3.tgz#43cb7818c944f1a68e1b3923a96082b47d135305"
-  integrity sha512-junWsVwjYz7u0oEXAtWVJhh4gV29Or97mtsk89pUehff10nqa0/XXv/gqybPR6Y8+GBYLp3HUa5WIuWbk63saQ==
+"@gravity-ui/uikit@^4.26.4":
+  version "4.26.4"
+  resolved "https://registry.yarnpkg.com/@gravity-ui/uikit/-/uikit-4.26.4.tgz#cafe7680d4747100daa38e22ed3c47a556a41a68"
+  integrity sha512-m5d81YWMaBsgTM8G19J+3WmXIwakm32HP6Uwt9dlPYzIi4ZukAoBytroDqUPwodp0oFyP1ZiHSW/IBWR2BUjIg==
   dependencies:
     "@gravity-ui/i18n" "^1.1.0"
     "@gravity-ui/icons" "^2.2.0"
