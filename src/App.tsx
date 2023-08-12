@@ -10,7 +10,7 @@ import iconTelegram from './assets/icons/telegram.svg';
 
 const b = block('app');
 
-const {get} = createClient<paths>({baseUrl: 'https://api.go-faster.org'});
+const {GET} = createClient<paths>({baseUrl: 'https://api.go-faster.org'});
 
 enum Theme {
     Dark = 'dark',
@@ -23,7 +23,8 @@ export const App = () => {
         },
     } as components['schemas']['Status']);
     const fetchData = async () => {
-        const {data} = await get('/status', {});
+        // eslint-disable-next-line new-cap
+        const {data} = await GET('/status', {});
         // TODO: show error on error
         return data || ({message: 'Not loaded'} as components['schemas']['Status']);
     };

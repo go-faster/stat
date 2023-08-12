@@ -21,7 +21,7 @@ export interface components {
     };
     User: {
       /**
-       * Format: int64 
+       * Format: int64
        * @description User ID
        */
       id: number;
@@ -30,12 +30,12 @@ export interface components {
       /** @description User full name */
       full_name: string;
       /**
-       * Format: uri 
+       * Format: uri
        * @description User avatar URL
        */
       avatar_url: string;
       /**
-       * Format: uri 
+       * Format: uri
        * @description User profile URL
        */
       html_url: string;
@@ -51,7 +51,7 @@ export interface components {
       /** @description Total commits */
       total_commits: number;
       /** @description Top users */
-      top_users: (components["schemas"]["UserStat"])[];
+      top_users: components["schemas"]["UserStat"][];
     };
     /** @description Status */
     Status: {
