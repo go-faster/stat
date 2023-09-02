@@ -13,7 +13,7 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "bem-cn-lite": "^4.1.0",
-    "openapi-fetch": "^0.7.4",
+    "openapi-fetch": "^0.7.5",
     "openapi-typescript": "^6.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
