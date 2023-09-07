@@ -27,7 +27,7 @@
     "@gravity-ui/stylelint-config": "^3.0.0",
     "@gravity-ui/tsconfig": "^1.0.0",
     "eslint": "^8.48.0",
-    "prettier": "^2.8.0",
+    "prettier": "^3.0.3",
     "react-app-rewired": "^2.2.1",
     "sass": "^1.66.1",
     "stylelint": "^15.10.3",
