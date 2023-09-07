@@ -1443,10 +1443,10 @@
     typograf "^6.14.0"
     uuid "^9.0.0"
 
-"@gravity-ui/prettier-config@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@gravity-ui/prettier-config/-/prettier-config-1.0.1.tgz#17e8bc11fd11564e712d49851f5210ac044db44e"
-  integrity sha512-VpTM+OiUMgXjwc7HBo0ekxBFghzELsnE/RFBYwbkbIqm0NrL4SiEPzne1IyEY/WsfI8om1hpn81t+qjGbicMSw==
+"@gravity-ui/prettier-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@gravity-ui/prettier-config/-/prettier-config-1.1.0.tgz#0a0ac5e8dfbae0de375e01f6aefcb4ace219cd8a"
+  integrity sha512-Q97lMSOqdAf337qblkq06mLgK9OEEGglPAj8ncs3WnaZ2rBtOxtNsCIubv5U64TZkxaNPzxd7rDL24VIv1sxJg==
 
 "@gravity-ui/stylelint-config@^3.0.0":
   version "3.0.0"
